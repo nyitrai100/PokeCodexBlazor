@@ -1,0 +1,79 @@
+﻿@page "/"
+@using PokeCodexBlazor
+@inject PokemonService PokemonService
+
+
+<PageTitle>Home</PageTitle>
+
+<h1>Pokemon List</h1>
+
+@if (_pokemons == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <ul>
+        
+        @foreach (var pokemon in _pokemons)
+        {
+            string folderPath = @"/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/pokemondb-resourses/pokemon";
+            string gifFilePath = Path.Combine(folderPath, $"{@pokemon.Name}.gif");
+            @* <li> *@
+            
+            <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Type1</th>
+                <th scope="col">Type2</th>
+                <th scope="col">Description</th>
+                <th scope="col">Weight</th>
+                <th scope="col">Height</th>
+                <th scope="col">Evolves</th>
+                <th scope="col">MEvolves</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                 @if (File.Exists(gifFilePath))
+                            {
+
+                                //convert theFilePath to url
+                                string base64String = Convert.ToBase64String(File.ReadAllBytes(gifFilePath));
+                                string dataUrl = $"data:image/gif;base64,{base64String}";
+                                // Display the GIF
+                                <td>  <img src="@dataUrl" /> </td>
+                            }
+                            else
+                            {
+                                <p>@($"No GIF found for {pokemon.Name}");</p>
+                            }
+                            <td><p>@pokemon.Name</p></td> 
+                            <td><p>@pokemon.Type1</p></td>
+                            <td><p>@pokemon.Type2</p></td>
+                            <td>@pokemon.Description</td>
+                            <td>@pokemon.Weight</td>
+                            <td>@pokemon.Height</td>
+                            <td>@pokemon.Evolves</td>
+                            <td>@pokemon.MegaEvolves</td>
+
+            @* </li> *@
+                </tr>
+              </tbody>
+            </table>
+        }
+    </ul>
+}
+
+@code{
+
+    private List<Pokemon> _pokemons = new List<Pokemon>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _pokemons = await PokemonService.GetAllPokemonsAsync();
+    }
+    
+}
