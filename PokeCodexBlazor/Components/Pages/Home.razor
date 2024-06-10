@@ -3,68 +3,146 @@
 @inject PokemonService PokemonService
 
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Pokecodex</PageTitle>
 
-<h1>Pokemon List</h1>
-
+@* <h1>Pokemon List</h1> *@
+<div style="margin-bottom: 15px;">
+    <h5>Search</h5>
+    <div class="d-inline">
+        <input type="text"/>
+        <button onclick="">Search</button>
+    </div>
+</div>
+<div>
+    <p>Pokemon types:</p>
+  
+</div>
 @if (_pokemons == null)
 {
     <p>Loading...</p>
 }
 else
 {
-    <ul>
-        
         @foreach (var pokemon in _pokemons)
         {
             string folderPath = @"/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/pokemondb-resourses/pokemon";
             string gifFilePath = Path.Combine(folderPath, $"{@pokemon.Name}.gif");
-            @* <li> *@
-            
-            <table class="table">
-            <thead>
-            <tr>
-                <th scope="col">Image</th>
-                <th scope="col">Name</th>
-                <th scope="col">Type1</th>
-                <th scope="col">Type2</th>
-                <th scope="col">Description</th>
-                <th scope="col">Weight</th>
-                <th scope="col">Height</th>
-                <th scope="col">Evolves</th>
-                <th scope="col">MEvolves</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                 @if (File.Exists(gifFilePath))
-                            {
+            string cardBackGroundColor = "";
 
-                                //convert theFilePath to url
-                                string base64String = Convert.ToBase64String(File.ReadAllBytes(gifFilePath));
-                                string dataUrl = $"data:image/gif;base64,{base64String}";
-                                // Display the GIF
-                                <td>  <img src="@dataUrl" /> </td>
-                            }
-                            else
-                            {
-                                <p>@($"No GIF found for {pokemon.Name}");</p>
-                            }
-                            <td><p>@pokemon.Name</p></td> 
-                            <td><p>@pokemon.Type1</p></td>
-                            <td><p>@pokemon.Type2</p></td>
-                            <td>@pokemon.Description</td>
-                            <td>@pokemon.Weight</td>
-                            <td>@pokemon.Height</td>
-                            <td>@pokemon.Evolves</td>
-                            <td>@pokemon.MegaEvolves</td>
+            switch (pokemon.Type1)
+            {
+                case "Water":
+                    cardBackGroundColor += "blue";
+                    break;
+                case "Grass":
+                    cardBackGroundColor += "lightGreen";
+                    break;
+                case "Normal":
+                    cardBackGroundColor += "lightBlue";
+                    break;
+                case "Fire":
+                    cardBackGroundColor += "red";
+                    break;
+                case "Bug":
+                    cardBackGroundColor += "darkGreen";
+                    break;
+                case "Poison":
+                    cardBackGroundColor += "purple";
+                    break;
+                case "Ground":
+                    cardBackGroundColor += "saddleBrown";
+                    break;
+                case "Psychic":
+                    cardBackGroundColor += "pink";
+                    break;
+                case "Fighting":
+                    cardBackGroundColor += "lightGrey";
+                    break;
+                case "Rock":
+                    cardBackGroundColor += "grey";
+                    break;
+                case "Electric":
+                    cardBackGroundColor += "yellow";
+                    break;
+                case "Ghost":
+                    cardBackGroundColor += "rebeccaPurple";
+                    break;
+                    
+                    default:
+                    cardBackGroundColor += "black";
+                    break;
+            }
+            <div class="d-inline-block" style="background-color: black; border-radius: 5px; margin-top: 2%; margin-left: 5%; margin-bottom: 2%;">
+            <div class="d-inline-block">
+                <div class="card border-dark" style="width: 100px; height: 140px; margin: 10px; background-color: @cardBackGroundColor;">
+                    @if (File.Exists(gifFilePath))
+                    {
 
-            @* </li> *@
-                </tr>
-              </tbody>
-            </table>
+                        //convert theFilePath to url
+                        string base64String = Convert.ToBase64String(File.ReadAllBytes(gifFilePath));
+                        string dataUrl = $"data:image/gif;base64,{base64String}";
+                        // Display the GIF
+                        <div class="d-flex justify-content-center" style="margin-top: 10px;border-bottom: 2px solid black">
+                            <img src="@dataUrl" width="60px" height="60px"/>
+                            </div>
+                    }
+                    else
+                    {
+                        <p>@($"No GIF found for {pokemon.Name}");</p>
+                    }
+                    <div class="d-flex justify-content-center" style="padding-top: 25%">
+                        <p style="color: black;">@pokemon.Name</p>
+                    </div>
+                    <div>
+                        <a href="/" class="d-flex justify-content-center" style="color:white; font-size: 15px; background-color: black; margin-top: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+                            More Details
+                        </a>
+                    </div>
+                </div>
+                </div>
+                @* <table class="table" style="width: fit-content; height: fit-content;"> *@
+                @*     <thead> *@
+                @*     <tr> *@
+                @*         <th scope="col">Image</th> *@
+                @*         <th scope="col">Name</th> *@
+                @*         $1$ <th scope="col">Type1</th> #1# *@
+                @*         $1$ <th scope="col">Type2</th> #1# *@
+                @*         $1$ <th scope="col">Description</th> #1# *@
+                @*         $1$ <th scope="col">Weight</th> #1# *@
+                @*         $1$ <th scope="col">Height</th> #1# *@
+                @*         $1$ <th scope="col">Evolves</th> #1# *@
+                @*         $1$ <th scope="col">MEvolves</th> #1# *@
+                @*     </tr> *@
+                @*     </thead> *@
+                @*     <tbody> *@
+                @*     <tr> *@
+                @*         @if (File.Exists(gifFilePath)) *@
+                @*         { *@
+                @* *@
+                @*             //convert theFilePath to url *@
+                @*             string base64String = Convert.ToBase64String(File.ReadAllBytes(gifFilePath)); *@
+                @*             string dataUrl = $"data:image/gif;base64,{base64String}"; *@
+                @*             // Display the GIF *@
+                @*             <td>  <img src="@dataUrl" /> </td> *@
+                @*         } *@
+                @*         else *@
+                @*         { *@
+                @*             <p>@($"No GIF found for {pokemon.Name}");</p> *@
+                @*         } *@
+                @*         <td><p>@pokemon.Name</p></td>  *@
+                @*         $1$ <td><p>@pokemon.Type1</p></td> #1# *@
+                @*         $1$ <td><p>@pokemon.Type2</p></td> #1# *@
+                @*         $1$ <td>@pokemon.Description</td> #1# *@
+                @*         $1$ <td>@pokemon.Weight</td> #1# *@
+                @*         $1$ <td>@pokemon.Height</td> #1# *@
+                @*         $1$ <td>@pokemon.Evolves</td> #1# *@
+                @*         $1$ <td>@pokemon.MegaEvolves</td> #1# *@
+                @*                  *@
+                @*     </tr> *@
+                @*     </tbody> *@
+                @* </table> *@
+            </div>
         }
-    </ul>
 }
 
 @code{
