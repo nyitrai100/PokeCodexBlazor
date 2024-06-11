@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/PokeCodexBlazor.bundle.scp.css"
     },
     {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/PokemonDetails.css",
+      "PackagePath": "staticwebassets/PokemonDetails.css"
+    },
+    {
       "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/app.css",
       "PackagePath": "staticwebassets/app.css"
     },

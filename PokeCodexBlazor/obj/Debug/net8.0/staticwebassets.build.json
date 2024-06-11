@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8WVJ3bJ2GZZzDSSJuAYHSZVk6ABtVOLLQ8YjcknSMEQ=",
+  "Hash": "YrVk/vBb3fp9bndUqyBpcHTuDCJvZvQs6m287689ens=",
   "Source": "PokeCodexBlazor",
   "BasePath": "_content/PokeCodexBlazor",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/logo.png"
+    },
+    {
+      "Identity": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/PokemonDetails.css",
+      "SourceId": "PokeCodexBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/",
+      "BasePath": "_content/PokeCodexBlazor",
+      "RelativePath": "PokemonDetails.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PokemonDetails.css"
     }
   ]
 }

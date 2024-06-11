@@ -93,56 +93,12 @@ else
                         <p style="color: black;">@pokemon.Name</p>
                     </div>
                     <div>
-                        <a href="/" class="d-flex justify-content-center" style="color:white; font-size: 15px; background-color: black; margin-top: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+                        <a href="@PokemonUrl(pokemon.Id)" class="d-flex justify-content-center" role="button" style="color:white; font-size: 15px; background-color: black; margin-top: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
                             More Details
                         </a>
-                           <a class="btn btn-primary me-2" role="button" href="@PokemonUrl(pokemon.Id)">
-                               <i class="bi bi-pencil"></i>
-                               </a>
                     </div>
                 </div>
                 </div>
-                @* <table class="table" style="width: fit-content; height: fit-content;"> *@
-                @*     <thead> *@
-                @*     <tr> *@
-                @*         <th scope="col">Image</th> *@
-                @*         <th scope="col">Name</th> *@
-                @*         $1$ <th scope="col">Type1</th> #1# *@
-                @*         $1$ <th scope="col">Type2</th> #1# *@
-                @*         $1$ <th scope="col">Description</th> #1# *@
-                @*         $1$ <th scope="col">Weight</th> #1# *@
-                @*         $1$ <th scope="col">Height</th> #1# *@
-                @*         $1$ <th scope="col">Evolves</th> #1# *@
-                @*         $1$ <th scope="col">MEvolves</th> #1# *@
-                @*     </tr> *@
-                @*     </thead> *@
-                @*     <tbody> *@
-                @*     <tr> *@
-                @*         @if (File.Exists(gifFilePath)) *@
-                @*         { *@
-                @* *@
-                @*             //convert theFilePath to url *@
-                @*             string base64String = Convert.ToBase64String(File.ReadAllBytes(gifFilePath)); *@
-                @*             string dataUrl = $"data:image/gif;base64,{base64String}"; *@
-                @*             // Display the GIF *@
-                @*             <td>  <img src="@dataUrl" /> </td> *@
-                @*         } *@
-                @*         else *@
-                @*         { *@
-                @*             <p>@($"No GIF found for {pokemon.Name}");</p> *@
-                @*         } *@
-                @*         <td><p>@pokemon.Name</p></td>  *@
-                @*         $1$ <td><p>@pokemon.Type1</p></td> #1# *@
-                @*         $1$ <td><p>@pokemon.Type2</p></td> #1# *@
-                @*         $1$ <td>@pokemon.Description</td> #1# *@
-                @*         $1$ <td>@pokemon.Weight</td> #1# *@
-                @*         $1$ <td>@pokemon.Height</td> #1# *@
-                @*         $1$ <td>@pokemon.Evolves</td> #1# *@
-                @*         $1$ <td>@pokemon.MegaEvolves</td> #1# *@
-                @*                  *@
-                @*     </tr> *@
-                @*     </tbody> *@
-                @* </table> *@
             </div>
         }
 }
