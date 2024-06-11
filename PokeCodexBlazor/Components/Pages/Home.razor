@@ -96,6 +96,9 @@ else
                         <a href="/" class="d-flex justify-content-center" style="color:white; font-size: 15px; background-color: black; margin-top: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
                             More Details
                         </a>
+                           <a class="btn btn-primary me-2" role="button" href="@PokemonUrl(pokemon.Id)">
+                               <i class="bi bi-pencil"></i>
+                               </a>
                     </div>
                 </div>
                 </div>
@@ -152,5 +155,5 @@ else
     {
         _pokemons = await PokemonService.GetAllPokemonsAsync();
     }
-    
+    private static string PokemonUrl(int id) => $"/PokemonDetails/{id}";
 }
