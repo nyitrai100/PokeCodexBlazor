@@ -29,6 +29,618 @@
       "PackagePath": "staticwebassets/images/logo.png"
     },
     {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Abra.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Abra.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Aerodactyl.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Aerodactyl.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Alakazam.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Alakazam.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Arbok.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Arbok.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Arcanine.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Arcanine.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Articuno.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Articuno.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Beedrill.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Beedrill.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Bellsprout.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Bellsprout.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Blastoise.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Blastoise.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Bulbasaur.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Bulbasaur.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Butterfree.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Butterfree.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Caterpie.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Caterpie.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Chansey.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Chansey.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Charizard.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Charizard.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Charmander.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Charmander.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Charmeleon.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Charmeleon.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Clefable.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Clefable.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Clefairy.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Clefairy.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Cloyster.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Cloyster.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Cubone.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Cubone.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Dewgong.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Dewgong.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Diglett.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Diglett.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Ditto.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Ditto.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Dodrio.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Dodrio.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Doduo.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Doduo.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Dragonair.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Dragonair.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Dragonite.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Dragonite.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Dratini.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Dratini.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Drowzee.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Drowzee.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Dugtrio.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Dugtrio.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Eevee.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Eevee.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Ekans.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Ekans.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Electabuzz.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Electabuzz.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Electrode.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Electrode.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Exeggcute.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Exeggcute.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Exeggutor.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Exeggutor.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Farfetch'd.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Farfetch'd.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Fearow.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Fearow.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Flareon.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Flareon.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Gastly.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Gastly.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Gengar.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Gengar.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Geodude.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Geodude.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Gloom.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Gloom.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Golbat.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Golbat.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Goldeen.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Goldeen.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Golduck.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Golduck.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Golem.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Golem.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Graveler.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Graveler.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Grimer.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Grimer.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Growlithe.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Growlithe.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Gyarados.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Gyarados.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Haunter.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Haunter.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Hitmonchan.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Hitmonchan.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Hitmonlee.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Hitmonlee.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Horsea.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Horsea.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Hypno.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Hypno.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Ivysaur.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Ivysaur.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Jigglypuff.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Jigglypuff.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Jolteon.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Jolteon.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Jynx.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Jynx.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Kabuto.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Kabuto.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Kabutops.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Kabutops.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Kadabra.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Kadabra.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Kakuna.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Kakuna.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Kangaskhan.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Kangaskhan.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Kingler.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Kingler.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Koffing.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Koffing.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Krabby.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Krabby.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Lapras.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Lapras.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Lickitung.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Lickitung.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Machamp.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Machamp.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Machoke.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Machoke.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Machop.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Machop.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Magikarp.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Magikarp.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Magmar.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Magmar.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Magnemite.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Magnemite.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Magneton.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Magneton.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Mankey.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Mankey.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Marowak.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Marowak.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Meowth.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Meowth.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Metapod.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Metapod.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Mew.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Mew.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Mewtwo.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Mewtwo.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Moltres.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Moltres.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Mr.Mime.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Mr.Mime.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Muk.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Muk.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Nidoking.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Nidoking.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Nidoqueen.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Nidoqueen.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Nidoran♀.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Nidoran♀.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Nidoran♂.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Nidoran♂.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Nidorina.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Nidorina.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Nidorino.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Nidorino.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Ninetales.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Ninetales.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Oddish.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Oddish.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Omanyte.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Omanyte.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Omastar.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Omastar.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Onix.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Onix.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Paras.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Paras.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Parasect.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Parasect.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Persian.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Persian.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Pidgeot.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Pidgeot.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Pidgeotto.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Pidgeotto.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Pidgey.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Pidgey.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Pikachu.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Pikachu.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Pinsir.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Pinsir.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Poliwag.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Poliwag.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Poliwhirl.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Poliwhirl.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Poliwrath.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Poliwrath.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Ponyta.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Ponyta.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Porygon.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Porygon.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Primeape.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Primeape.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Psyduck.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Psyduck.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Raichu.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Raichu.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Rapidash.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Rapidash.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Raticate.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Raticate.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Rattata.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Rattata.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Rhydon.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Rhydon.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Rhyhorn.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Rhyhorn.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Sandshrew.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Sandshrew.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Sandslash.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Sandslash.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Scyther.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Scyther.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Seadra.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Seadra.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Seaking.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Seaking.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Seel.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Seel.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Shellder.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Shellder.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Slowbro.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Slowbro.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Slowpoke.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Slowpoke.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Snorlax.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Snorlax.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Spearow.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Spearow.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Squirtle.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Squirtle.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Starmie.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Starmie.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Staryu.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Staryu.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Tangela.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Tangela.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Tauros.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Tauros.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Tentacool.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Tentacool.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Tentacruel.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Tentacruel.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Vaporeon.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Vaporeon.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Venomoth.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Venomoth.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Venonat.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Venonat.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Venusaur.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Venusaur.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Victreebel.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Victreebel.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Vileplume.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Vileplume.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Voltorb.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Voltorb.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Vulpix.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Vulpix.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Wartortle.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Wartortle.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Weedle.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Weedle.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Weepinbell.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Weepinbell.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Weezing.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Weezing.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Wigglytuff.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Wigglytuff.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Zapdos.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Zapdos.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Zubat.gif",
+      "PackagePath": "staticwebassets/images/pokemon/Zubat.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/dexball.png",
+      "PackagePath": "staticwebassets/images/pokemon/dexball.png"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/pokeball.gif",
+      "PackagePath": "staticwebassets/images/pokemon/pokeball.gif"
+    },
+    {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.PokeCodexBlazor.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

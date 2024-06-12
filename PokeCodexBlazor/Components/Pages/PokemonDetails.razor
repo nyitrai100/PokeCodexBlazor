@@ -16,8 +16,7 @@
 }
 else
 {
-  string folderPath = @"/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/pokemondb-resourses/pokemon";
-  string gifFilePath = Path.Combine(folderPath, $"{@pokemon.Name}.gif");
+  string gifFilePath = $"/images/pokemon/{pokemon.Name}.gif";
     <div>
         @* <h4>@pokemon.Name</h4> *@
         @* <p>Type 1: @pokemon.Type1</p> *@
@@ -52,22 +51,9 @@ else
                 <div id="buttontopPicture2"></div>
               </div>
               <div id="picture">
-                     @if (File.Exists(gifFilePath))
-                                                  {
-                                                      //convert theFilePath to url
-                                                      string base64String = Convert.ToBase64String(File.ReadAllBytes(gifFilePath));
-                                                      string dataUrl = $"data:image/gif;base64,{base64String}";
-                                                      // Display the GIF
-                                                      <div style="margin-top: 10%">
-                                                        <img src="@dataUrl"  height="100px"/>
-                                                      </div>
-                                                        
-                                                      
-                                                  }
-                                                  else
-                                                  {
-                                                      <p>@($"No GIF found for {pokemon.Name}");</p>
-                                                  }
+                <div style="margin-top: 10%">
+                  <img src="@gifFilePath" height="100px" onerror="this.src='/images/default.gif'; this.onerror=null;"/>
+                </div>
               </div>
               <div id="buttonbottomPicture"></div>
               <div id="speakers">
