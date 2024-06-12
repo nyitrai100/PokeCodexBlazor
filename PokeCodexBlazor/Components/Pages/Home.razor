@@ -10,8 +10,9 @@
 <div style="margin-bottom: 15px;">
     <h5>Search</h5>
     <div class="d-inline">
-        <input type="text" @bind="InputValue"/>
-        @* <button onclick="">Search</button> *@
+        <input type="text" @bind="temporaryInputValue"/>
+        <button @onclick="Search">Search</button>
+        <button @onclick="Clear">Clear</button>
     </div>
 </div>
 <div>
@@ -35,50 +36,7 @@ else
             if (showPokemon)
             {
                 foundPokemon = true;
-                string cardBackGroundColor = "";
-                switch (pokemon.Type1)
-                {
-                    case "Water":
-                        cardBackGroundColor += "blue";
-                        break;
-                    case "Grass":
-                        cardBackGroundColor += "lightGreen";
-                        break;
-                    case "Normal":
-                        cardBackGroundColor += "lightBlue";
-                        break;
-                    case "Fire":
-                        cardBackGroundColor += "red";
-                        break;
-                    case "Bug":
-                        cardBackGroundColor += "darkGreen";
-                        break;
-                    case "Poison":
-                        cardBackGroundColor += "purple";
-                        break;
-                    case "Ground":
-                        cardBackGroundColor += "saddleBrown";
-                        break;
-                    case "Psychic":
-                        cardBackGroundColor += "pink";
-                        break;
-                    case "Fighting":
-                        cardBackGroundColor += "lightGrey";
-                        break;
-                    case "Rock":
-                        cardBackGroundColor += "grey";
-                        break;
-                    case "Electric":
-                        cardBackGroundColor += "yellow";
-                        break;
-                    case "Ghost":
-                        cardBackGroundColor += "rebeccaPurple";
-                        break;
-
-                    default:
-                        cardBackGroundColor += "black";
-                        break;
-                }
+                string cardBackGroundColor = GetCardBackgroundColor(pokemon.Type1);
 
                 <div class="d-inline-block" style="background-color: black; border-radius: 5px; margin-top: 2%; margin-left: 5%; margin-bottom: 2%;">
                     <div class="d-inline-block">
@@ -107,15 +65,42 @@ else
      
 
 @code{
-
+    bool foundPokemon = false;
+    private string temporaryInputValue;
     private List<Pokemon> _pokemons = new List<Pokemon>();
-
+    
     protected override async Task OnInitializedAsync()
     {
         _pokemons = await PokemonService.GetAllPokemonsAsync();
     }
     private static string PokemonUrl(int id) => $"/PokemonDetails/{id}";
-
     private string InputValue { get; set; } = string.Empty;
-    bool foundPokemon = false;
+    private string GetCardBackgroundColor(string type)
+    {
+        return type switch
+        {
+            "Water" => "blue",
+            "Grass" => "lightGreen",
+            "Normal" => "lightBlue",
+            "Fire" => "red",
+            "Bug" => "darkGreen",
+            "Poison" => "purple",
+            "Ground" => "saddleBrown",
+            "Psychic" => "pink",
+            "Fighting" => "lightGrey",
+            "Rock" => "grey",
+            "Electric" => "yellow",
+            "Ghost" => "rebeccaPurple",
+            _ => "black"
+        };
+    }
+
+    private void Search()
+    {
+        InputValue = temporaryInputValue;
+    }
+    private void Clear()
+    {
+        InputValue = string.Empty;
+    }
 }
