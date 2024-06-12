@@ -1,6 +1,7 @@
 ﻿@page "/"
 @using PokeCodexBlazor
 @inject PokemonService PokemonService
+@rendermode InteractiveServer
 
 
 <PageTitle>Pokecodex</PageTitle>
@@ -9,8 +10,8 @@
 <div style="margin-bottom: 15px;">
     <h5>Search</h5>
     <div class="d-inline">
-        <input type="text"/>
-        <button onclick="">Search</button>
+        <input type="text" @bind="InputValue"/>
+        @* <button onclick="">Search</button> *@
     </div>
 </div>
 <div>
@@ -23,73 +24,87 @@
 }
 else
 {
+    bool foundPokemon = false;    
+    
         @foreach (var pokemon in _pokemons)
         {
             string gifFilePath = $"/images/pokemon/{pokemon.Name}.gif";
             
-            string cardBackGroundColor = "";
-            switch (pokemon.Type1)
+            bool showPokemon = string.IsNullOrEmpty(InputValue) || pokemon.Name.Contains(InputValue, StringComparison.OrdinalIgnoreCase);
+            
+            if (showPokemon)
             {
-                case "Water":
-                    cardBackGroundColor += "blue";
-                    break;
-                case "Grass":
-                    cardBackGroundColor += "lightGreen";
-                    break;
-                case "Normal":
-                    cardBackGroundColor += "lightBlue";
-                    break;
-                case "Fire":
-                    cardBackGroundColor += "red";
-                    break;
-                case "Bug":
-                    cardBackGroundColor += "darkGreen";
-                    break;
-                case "Poison":
-                    cardBackGroundColor += "purple";
-                    break;
-                case "Ground":
-                    cardBackGroundColor += "saddleBrown";
-                    break;
-                case "Psychic":
-                    cardBackGroundColor += "pink";
-                    break;
-                case "Fighting":
-                    cardBackGroundColor += "lightGrey";
-                    break;
-                case "Rock":
-                    cardBackGroundColor += "grey";
-                    break;
-                case "Electric":
-                    cardBackGroundColor += "yellow";
-                    break;
-                case "Ghost":
-                    cardBackGroundColor += "rebeccaPurple";
-                    break;
-                    
+                foundPokemon = true;
+                string cardBackGroundColor = "";
+                switch (pokemon.Type1)
+                {
+                    case "Water":
+                        cardBackGroundColor += "blue";
+                        break;
+                    case "Grass":
+                        cardBackGroundColor += "lightGreen";
+                        break;
+                    case "Normal":
+                        cardBackGroundColor += "lightBlue";
+                        break;
+                    case "Fire":
+                        cardBackGroundColor += "red";
+                        break;
+                    case "Bug":
+                        cardBackGroundColor += "darkGreen";
+                        break;
+                    case "Poison":
+                        cardBackGroundColor += "purple";
+                        break;
+                    case "Ground":
+                        cardBackGroundColor += "saddleBrown";
+                        break;
+                    case "Psychic":
+                        cardBackGroundColor += "pink";
+                        break;
+                    case "Fighting":
+                        cardBackGroundColor += "lightGrey";
+                        break;
+                    case "Rock":
+                        cardBackGroundColor += "grey";
+                        break;
+                    case "Electric":
+                        cardBackGroundColor += "yellow";
+                        break;
+                    case "Ghost":
+                        cardBackGroundColor += "rebeccaPurple";
+                        break;
+
                     default:
-                    cardBackGroundColor += "black";
-                    break;
+                        cardBackGroundColor += "black";
+                        break;
+                }
+
+                <div class="d-inline-block" style="background-color: black; border-radius: 5px; margin-top: 2%; margin-left: 5%; margin-bottom: 2%;">
+                    <div class="d-inline-block">
+                        <div class="card border-dark" style="width: 100px; height: 140px; margin: 10px; background-color: @cardBackGroundColor;">
+                            <div class="d-flex justify-content-center" style="margin-top: 10px;border-bottom: 2px solid black">
+                                <img src="@gifFilePath" width="60px" height="60px" onerror="this.src='/images/default.gif'; this.onerror=null;"/>
+                            </div>
+                            <div class="d-flex justify-content-center" style="padding-top: 25%">
+                                <p style="color: black;">@pokemon.Name</p>
+                            </div>
+                            <div>
+                                <a href="@PokemonUrl(pokemon.Id)" class="d-flex justify-content-center" role="button" style="color:white; font-size: 15px; background-color: black; margin-top: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+                                    More Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             }
-            <div class="d-inline-block" style="background-color: black; border-radius: 5px; margin-top: 2%; margin-left: 5%; margin-bottom: 2%;">
-            <div class="d-inline-block">
-                <div class="card border-dark" style="width: 100px; height: 140px; margin: 10px; background-color: @cardBackGroundColor;">
-                    <div class="d-flex justify-content-center" style="margin-top: 10px;border-bottom: 2px solid black">
-                        <img src="@gifFilePath" width="60px" height="60px" onerror="this.src='/images/default.gif'; this.onerror=null;"/>
-                    </div>
-                    <div class="d-flex justify-content-center" style="padding-top: 25%">
-                        <p style="color: black;">@pokemon.Name</p>
-                    </div>
-                    <div>
-                        <a href="@PokemonUrl(pokemon.Id)" class="d-flex justify-content-center" role="button" style="color:white; font-size: 15px; background-color: black; margin-top: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
-                            More Details
-                        </a>
-                    </div>
-                </div>
-                </div>
-            </div>
+        }
+        @if (!foundPokemon)
+        {
+            <h1>No Pokemon Found!</h1>
         }
 }
+     
 
 @code{
 
@@ -100,4 +115,7 @@ else
         _pokemons = await PokemonService.GetAllPokemonsAsync();
     }
     private static string PokemonUrl(int id) => $"/PokemonDetails/{id}";
-};
+
+    private string InputValue { get; set; } = string.Empty;
+    bool foundPokemon = false;
+}
