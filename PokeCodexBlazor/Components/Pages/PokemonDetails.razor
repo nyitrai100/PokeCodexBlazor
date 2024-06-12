@@ -20,6 +20,7 @@
 else
 {
   string gifFilePath = $"/images/pokemon/{pokemon.Name}.gif";
+  // string secondLevelPokemon = $"/images/pokemon/{nextLevelPokemon.Name}.gif";
     <div>
         @* <h4>@pokemon.Name</h4> *@
         @* <p>Type 1: @pokemon.Type1</p> *@
@@ -94,6 +95,10 @@ else
               <strong>Height:</strong> @pokemon.Height <br/>
               <strong>Weight:</strong> @pokemon.Weight <br/><br/>
               <strong>@pokemon.Description</strong><br/>
+              @* @if (nextLevelPokemon != null) *@
+              @* { *@
+              @*   <strong>Next Level Height:</strong> @nextLevelPokemon.Height *@
+              @* } *@
             </div>
             <div id="blueButtons1">
               <div class="blueButton"></div>
@@ -113,7 +118,12 @@ else
             <div id="miniButtonGlass5"></div>
             <div id="barbutton3"></div>
             <div id="barbutton4"></div>
-            <div id="yellowBox1"></div>
+            <div id="yellowBox1" class="d-flex justify-content-center">
+              @* @if (pokemon.Id % 3 != 0 && pokemon.Type1 == nextLevelPokemon.Type1) *@
+              @* { *@
+              @*   <img src="@secondLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;"/> *@
+              @* } *@
+            </div>
             <div id="yellowBox2"></div>
             <div id="bg_curve1_right"></div>
             <div id="bg_curve2_right"></div>
@@ -126,13 +136,15 @@ else
 
 @code {
   [Parameter] public int Id { get; set; }
-
+  // [Parameter] public int NextId { get; set; }
   private Pokemon pokemon;
-
+  // private Pokemon nextLevelPokemon;
+  
   protected override async Task OnInitializedAsync()
   {
     var pokemons = await PokemonService.GetAllPokemonsAsync();
     pokemon = pokemons.FirstOrDefault(p => p.Id == Id);
+    // nextLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id + 1);
   }
   
 }
