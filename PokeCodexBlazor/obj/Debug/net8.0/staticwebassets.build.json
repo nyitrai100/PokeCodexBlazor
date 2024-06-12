@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GQoTbyFNs26TrvIotSSf3lnVW2h+vvLy2ydELNCKtnU=",
+  "Hash": "Q8TVL7ROE3sDmvvdOUrTbx27IAJ5Xt9hwExU5UZECco=",
   "Source": "PokeCodexBlazor",
   "BasePath": "_content/PokeCodexBlazor",
   "Mode": "Default",
@@ -1841,12 +1841,12 @@
       "OriginalItemSpec": "wwwroot/images/pokemon/Nidoqueen.gif"
     },
     {
-      "Identity": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Nidoran♀.gif",
+      "Identity": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/NidoranFemale.gif",
       "SourceId": "PokeCodexBlazor",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/",
       "BasePath": "_content/PokeCodexBlazor",
-      "RelativePath": "images/pokemon/Nidoran♀.gif",
+      "RelativePath": "images/pokemon/NidoranFemale.gif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1857,15 +1857,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/pokemon/Nidoran♀.gif"
+      "OriginalItemSpec": "wwwroot/images/pokemon/NidoranFemale.gif"
     },
     {
-      "Identity": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Nidoran♂.gif",
+      "Identity": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/NidoranMale.gif",
       "SourceId": "PokeCodexBlazor",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/",
       "BasePath": "_content/PokeCodexBlazor",
-      "RelativePath": "images/pokemon/Nidoran♂.gif",
+      "RelativePath": "images/pokemon/NidoranMale.gif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1876,7 +1876,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/pokemon/Nidoran♂.gif"
+      "OriginalItemSpec": "wwwroot/images/pokemon/NidoranMale.gif"
     },
     {
       "Identity": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Nidorina.gif",

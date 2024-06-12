@@ -381,12 +381,12 @@
       "PackagePath": "staticwebassets/images/pokemon/Nidoqueen.gif"
     },
     {
-      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Nidoran♀.gif",
-      "PackagePath": "staticwebassets/images/pokemon/Nidoran♀.gif"
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/NidoranFemale.gif",
+      "PackagePath": "staticwebassets/images/pokemon/NidoranFemale.gif"
     },
     {
-      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Nidoran♂.gif",
-      "PackagePath": "staticwebassets/images/pokemon/Nidoran♂.gif"
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/NidoranMale.gif",
+      "PackagePath": "staticwebassets/images/pokemon/NidoranMale.gif"
     },
     {
       "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Nidorina.gif",

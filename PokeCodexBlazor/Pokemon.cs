@@ -23,7 +23,7 @@ public class Pokemon
     public double Weight { get; set; }
     
     [Column("height")]
-    public double Height { get; set; }
+    public int Height { get; set; }
     
     [Column("mega_evolves")]
     public char MegaEvolves { get; set; }
