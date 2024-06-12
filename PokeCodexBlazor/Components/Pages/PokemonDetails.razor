@@ -2,13 +2,16 @@
 @inject PokemonService PokemonService
 @using PokeCodexBlazor
 
+
+
 <head>
     <link rel="stylesheet" href="PokemonDetails.css">
 </head>
 
 
 <h3>Pokemon Details</h3>
-@* <button><a href="/">Back</a></button> *@
+<button><a href="/" style="text-decoration: none; color: black;">Back</a></button>
+
 
 @if (pokemon == null)
 {
@@ -131,6 +134,5 @@ else
     var pokemons = await PokemonService.GetAllPokemonsAsync();
     pokemon = pokemons.FirstOrDefault(p => p.Id == Id);
   }
-
-
+  
 }
