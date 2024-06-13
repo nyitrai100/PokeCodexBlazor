@@ -46,6 +46,7 @@ else
         @foreach (var pokemon in _pokemons)
         {
             string gifFilePath = $"/images/pokemon/{pokemon.Name}.gif";
+                
             // pokemon.Type1 
             bool showPokemon = string.IsNullOrEmpty(InputValue) || pokemon.Name.Contains(InputValue, StringComparison.OrdinalIgnoreCase);
             bool showByButton = pokemon.Type1.Contains(pokemonTypeOnClick);
@@ -54,7 +55,6 @@ else
             {
                 foundPokemon = true;
                 string cardBackGroundColor = GetCardBackgroundColor(pokemon.Type1);
-
                 <div class="d-inline-block" style="background-color: black; border-radius: 5px; margin-top: 2%; margin-left: 5%; margin-bottom: 2%;">
                     <div class="d-inline-block">
                         <div class="card border-dark" style="width: 100px; height: 140px; margin: 10px; background-color: @cardBackGroundColor;">

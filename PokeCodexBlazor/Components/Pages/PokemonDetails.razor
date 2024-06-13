@@ -119,12 +119,11 @@ else
             <div id="barbutton3"></div>
             <div id="barbutton4"></div>
             <div id="yellowBox1" class="d-flex justify-content-center">
-              @* @if (nextLevelPokemon.Evolves != 16 || nextLevelPokemon.Evolves != 0 ) *@
-              @* { *@
-              @*   <img src="@secondLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;"/> *@
-              @* } *@
+                @* <img src="@secondLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;"/> *@
             </div>
-            <div id="yellowBox2"></div>
+            <div id="yellowBox2">
+              
+            </div>
             <div id="bg_curve1_right"></div>
             <div id="bg_curve2_right"></div>
             <div id="curve1_right"></div>
@@ -136,7 +135,7 @@ else
 
 @code {
   [Parameter] public int Id { get; set; }
-  // [Parameter] public int NextId { get; set; }
+  [Parameter] public int NextId { get; set; }
   private Pokemon pokemon;
   // private Pokemon nextLevelPokemon;
   
