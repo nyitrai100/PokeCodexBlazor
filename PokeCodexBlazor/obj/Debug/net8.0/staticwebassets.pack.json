@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/PokemonDetails.css"
     },
     {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/TurnOffUndHandle.css",
+      "PackagePath": "staticwebassets/TurnOffUndHandle.css"
+    },
+    {
       "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/app.css",
       "PackagePath": "staticwebassets/app.css"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Q8TVL7ROE3sDmvvdOUrTbx27IAJ5Xt9hwExU5UZECco=",
+  "Hash": "sbmkZPz+Rpn5yGkLIXEnxeAemaFoE8nE9q94NC2+660=",
   "Source": "PokeCodexBlazor",
   "BasePath": "_content/PokeCodexBlazor",
   "Mode": "Default",
@@ -3074,6 +3074,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/PokemonDetails.css"
+    },
+    {
+      "Identity": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/TurnOffUndHandle.css",
+      "SourceId": "PokeCodexBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/",
+      "BasePath": "_content/PokeCodexBlazor",
+      "RelativePath": "TurnOffUndHandle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/TurnOffUndHandle.css"
     }
   ]
 }
