@@ -31,4 +31,7 @@ public class Pokemon
     [Column("evolves")]
     public int Evolves { get; set; }
     
+    [Column("level")]
+    public int Level { get; set; }
+    
 }
