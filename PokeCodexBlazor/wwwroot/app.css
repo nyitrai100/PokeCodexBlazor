@@ -3,6 +3,10 @@ html, body {
 
 }
 
+body{
+    background-color: #fbd743;
+}
+
 a, .btn-link {
     color: #006bb7;
 }

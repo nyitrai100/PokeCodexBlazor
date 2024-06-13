@@ -6,7 +6,6 @@
 
 <PageTitle>Pokecodex</PageTitle>
 
-
 <div style="margin-bottom: 15px;">
     <h5>Search</h5>
     <div class="d-inline">
@@ -20,11 +19,11 @@
     <div class="d-flex align-items-center justify-content-between">
     @foreach (var pokemonType in PokemonTypeList)
     {
-            <div style="background-color: @GetCardBackgroundColor(pokemonType);  border: 1px solid black; border-radius: 5px; width: 60px; height: 30px;">
-                <p class="d-flex justify-content-center" style="color: black; text-decoration-style: double;">@pokemonType</p>
-            </div>
+        <div>
+            <button class="d-flex justify-content-center" style="background-color: @GetCardBackgroundColor(pokemonType); color: black; text-decoration-style: double;  border: 1px solid black; border-radius: 5px; width: 60px; height: 30px;" @onclick="@(() => PokemonTypeButton(@pokemonType))">@pokemonType</button>
+        </div>
     }
-   
+    @* <h1>@pokemonTypeOnClick</h1> *@
     </div>
 </div>
 @if (_pokemons == null)
@@ -37,13 +36,12 @@ else
     
         @foreach (var pokemon in _pokemons)
         {
-            
             string gifFilePath = $"/images/pokemon/{pokemon.Name}.gif";
             // pokemon.Type1 
             bool showPokemon = string.IsNullOrEmpty(InputValue) || pokemon.Name.Contains(InputValue, StringComparison.OrdinalIgnoreCase);
-
+            bool showByButton = pokemon.Type1.Contains(pokemonTypeOnClick);
             
-            if (showPokemon)
+            if (showPokemon && showByButton)
             {
                 foundPokemon = true;
                 string cardBackGroundColor = GetCardBackgroundColor(pokemon.Type1);
@@ -72,11 +70,11 @@ else
             <h1>No Pokemon Found!</h1>
         }
 }
-     
 
 @code{
     bool foundPokemon = false;
     private string temporaryInputValue;
+    private string pokemonTypeOnClick { get; set; } = string.Empty;
     private List<Pokemon> _pokemons = new List<Pokemon>();
     public List<string> PokemonTypeList = new List<string>();
 
@@ -118,7 +116,14 @@ else
     private void Clear()
     {
         InputValue = string.Empty;
+        pokemonTypeOnClick = string.Empty;
     }
-    
+
+    private void PokemonTypeButton(string pokemonType)
+    {
+        pokemonTypeOnClick = string.Empty;
+        pokemonTypeOnClick += pokemonType;
+        StateHasChanged();
+    }
     
 }
