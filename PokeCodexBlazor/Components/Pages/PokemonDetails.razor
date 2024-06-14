@@ -20,7 +20,7 @@ else
     string firstLevelPokemon = backLevelPokemon != null ? $"/images/pokemon/{backLevelPokemon.Name}.gif" : "";
     string thirdLevelPokemon = nextNextLevelPokemon != null ? $"/images/pokemon/{nextNextLevelPokemon.Name}.gif" : "";
     string firstLevelPokemonForThirdLPokemons = backBackLevelPokemon != null ? $"/images/pokemon/{backBackLevelPokemon.Name}.gif" : "";
-    <div>
+    <div style="margin-bottom: 670px">
         <div id="pokedex">
             <div id="left">
                 <div id="logo"></div>
@@ -114,18 +114,27 @@ else
                             case 1:
                                 if (pokemon.Id != 151 && nextLevelPokemon != null && nextLevelPokemon.Level > 1)
                                 {
+                                    <p style="display: flex; position: absolute; top: 71px; font-size: xx-small; color: white; text-decoration-style: double; ">
+                                         Level 2
+                                    </p>
                                     <img src="@secondLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
                                 }
                                 break;
                             case 2:
                                 if (backLevelPokemon != null && backLevelPokemon.Level == 1)
                                 {
+                                    <p style="display: flex; position: absolute; top: 71px; font-size: xx-small; color: white; text-decoration-style: double; ">
+                                        Level 1
+                                    </p>
                                     <img src="@firstLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
                                 }
                                 break;
                             case 3:
                                 if (backBackLevelPokemon != null && backBackLevelPokemon.Level == 1)
                                 {
+                                    <p style="display: flex; position: absolute; top: 71px; font-size: xx-small; color: white; text-decoration-style: double; ">
+                                        Level 1
+                                    </p>
                                     <img src="@firstLevelPokemonForThirdLPokemons" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
                                 }
                                 break;
@@ -154,23 +163,35 @@ else
                             case 1:
                                 if (pokemon.Id != 151 && pokemon.Id != 150 && nextNextLevelPokemon != null && nextNextLevelPokemon.Level == 3)
                                 {
+                                    <p style="display: flex; position: absolute; top: 71px; font-size: xx-small; color: white; text-decoration-style: double; ">
+                                        Level 3
+                                    </p>
                                     <img src="@thirdLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
                                 }
 
                                 else if (pokemon.Name == "Eevee")
                                 {
+                                    <p style="display: flex; position: absolute; top: 71px; font-size: xx-small; color: white; text-decoration-style: double; ">
+                                        Level 2
+                                    </p>
                                     <img src="images/pokemon/Flareon.gif" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
                                 }
                                 break;
                             case 2:
                                 if (nextLevelPokemon != null && nextLevelPokemon.Level > 2)
                                 {
+                                    <p style="display: flex; position: absolute; top: 71px; font-size: xx-small; color: white; text-decoration-style: double; ">
+                                        Level 3
+                                    </p>
                                     <img src="@secondLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
                                 }
                                 break;
                             case 3:
                                 if (backLevelPokemon != null && backLevelPokemon.Level == 2)
                                 {
+                                    <p style="display: flex; position: absolute; top: 71px; font-size: xx-small; color: white; text-decoration-style: double; ">
+                                        Level 2
+                                    </p>
                                     <img src="@firstLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
                                 }
                                 break;
