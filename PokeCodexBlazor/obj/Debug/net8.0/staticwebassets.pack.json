@@ -241,10 +241,6 @@
       "PackagePath": "staticwebassets/images/pokemon/Haunter.gif"
     },
     {
-      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Hitmonchan.gif",
-      "PackagePath": "staticwebassets/images/pokemon/Hitmonchan.gif"
-    },
-    {
       "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Hitmonlee.gif",
       "PackagePath": "staticwebassets/images/pokemon/Hitmonlee.gif"
     },
@@ -639,6 +635,10 @@
     {
       "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/dexball.png",
       "PackagePath": "staticwebassets/images/pokemon/dexball.png"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/hitmonchan.gif",
+      "PackagePath": "staticwebassets/images/pokemon/hitmonchan.gif"
     },
     {
       "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/pokeball.gif",

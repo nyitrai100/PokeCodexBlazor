@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sbmkZPz+Rpn5yGkLIXEnxeAemaFoE8nE9q94NC2+660=",
+  "Hash": "aNUnIPL7I0U5az3VUBhHl6lYGWviESQMuVaOcR3bt/I=",
   "Source": "PokeCodexBlazor",
   "BasePath": "_content/PokeCodexBlazor",
   "Mode": "Default",
@@ -1157,12 +1157,12 @@
       "OriginalItemSpec": "wwwroot/images/pokemon/Haunter.gif"
     },
     {
-      "Identity": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Hitmonchan.gif",
+      "Identity": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/hitmonchan.gif",
       "SourceId": "PokeCodexBlazor",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/",
       "BasePath": "_content/PokeCodexBlazor",
-      "RelativePath": "images/pokemon/Hitmonchan.gif",
+      "RelativePath": "images/pokemon/hitmonchan.gif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1173,7 +1173,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/pokemon/Hitmonchan.gif"
+      "OriginalItemSpec": "wwwroot/images/pokemon/hitmonchan.gif"
     },
     {
       "Identity": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Hitmonlee.gif",
