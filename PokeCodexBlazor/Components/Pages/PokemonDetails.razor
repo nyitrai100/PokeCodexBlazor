@@ -2,16 +2,12 @@
 @inject PokemonService PokemonService
 @using PokeCodexBlazor
 
-
-
 <head>
     <link rel="stylesheet" href="PokemonDetails.css">
 </head>
 
-
 <h3>Pokemon Details</h3>
 <button><a href="/" style="text-decoration: none; color: black;">Back</a></button>
-
 
 @if (pokemon == null)
 {
@@ -19,178 +15,197 @@
 }
 else
 {
-  string gifFilePath = $"/images/pokemon/{pokemon.Name}.gif";
-  string secondLevelPokemon = nextLevelPokemon != null ? $"/images/pokemon/{nextLevelPokemon.Name}.gif" : "";
-  string firstLevelPokemon = backLevelPokemon !=null ? $"/images/pokemon/{backLevelPokemon.Name}.gif" : "";
-  string thirdLevelPokemon = nextNextLevelPokemon !=null ? $"/images/pokemon/{nextNextLevelPokemon.Name}.gif" : "";
+    string gifFilePath = $"/images/pokemon/{pokemon.Name}.gif";
+    string secondLevelPokemon = nextLevelPokemon != null ? $"/images/pokemon/{nextLevelPokemon.Name}.gif" : "";
+    string firstLevelPokemon = backLevelPokemon != null ? $"/images/pokemon/{backLevelPokemon.Name}.gif" : "";
+    string thirdLevelPokemon = nextNextLevelPokemon != null ? $"/images/pokemon/{nextNextLevelPokemon.Name}.gif" : "";
+    string firstLevelPokemonForThirdLPokemons = backBackLevelPokemon != null ? $"/images/pokemon/{backBackLevelPokemon.Name}.gif" : "";
     <div>
-        @* <h4>@pokemon.Name</h4> *@
-        @* <p>Type 1: @pokemon.Type1</p> *@
-        @* <p>Type 2: @pokemon.Type2</p> *@
-        @* <p>Description: @pokemon.Description</p> *@
-        @* <p>Weight: @pokemon.Weight</p> *@
-        @* <p>Height: @pokemon.Height</p> *@
-        @* <p>Evolves: @pokemon.Evolves</p> *@
-        @* <p>Mega Evolves: @pokemon.MegaEvolves</p> *@
         <div id="pokedex">
-          <div id="left">
-            <div id="logo"></div>
-            <div id="bg_curve1_left"></div>
-            <div id="bg_curve2_left"></div>
-            <div id="curve1_left">
-              <div id="buttonGlass">
-                <div id="reflect"> </div>
-              </div>
-              <div id="miniButtonGlass1"></div>
-              <div id="miniButtonGlass2"></div>
-              <div id="miniButtonGlass3"></div>
-            </div>
-            <div id="curve2_left">
-              <div id="junction">
-                <div id="junction1"></div>
-                <div id="junction2"></div>
-              </div>
-            </div>
-            <div id="screen">
-              <div id="topPicture">
-                <div id="buttontopPicture1"></div>
-                <div id="buttontopPicture2"></div>
-              </div>
-              <div id="picture">
-                <div style="margin-top: 10%">
-                  <img src="@gifFilePath" height="100px" onerror="this.src='/images/default.gif'; this.onerror=null;"/>
+            <div id="left">
+                <div id="logo"></div>
+                <div id="bg_curve1_left"></div>
+                <div id="bg_curve2_left"></div>
+                <div id="curve1_left">
+                    <div id="buttonGlass">
+                        <div id="reflect"> </div>
+                    </div>
+                    <div id="miniButtonGlass1"></div>
+                    <div id="miniButtonGlass2"></div>
+                    <div id="miniButtonGlass3"></div>
                 </div>
-              </div>
-              <div id="buttonbottomPicture"></div>
-              <div id="speakers">
-                <div class="sp"></div>
-                <div class="sp"></div>
-                <div class="sp"></div>
-                <div class="sp"></div>
-              </div>
+                <div id="curve2_left">
+                    <div id="junction">
+                        <div id="junction1"></div>
+                        <div id="junction2"></div>
+                    </div>
+                </div>
+                <div id="screen">
+                    <div id="topPicture">
+                        <div id="buttontopPicture1"></div>
+                        <div id="buttontopPicture2"></div>
+                    </div>
+                    <div id="picture">
+                        <div style="margin-top: 10%">
+                            <img src="@gifFilePath" height="100px" onerror="this.src='/images/default.gif'; this.onerror=null;" />
+                        </div>
+                    </div>
+                    <div id="buttonbottomPicture"></div>
+                    <div id="speakers">
+                        <div class="sp"></div>
+                        <div class="sp"></div>
+                        <div class="sp"></div>
+                        <div class="sp"></div>
+                    </div>
+                </div>
+                <div id="bigbluebutton"></div>
+                <div id="barbutton1"></div>
+                <div id="barbutton2"></div>
+                <div id="cross">
+                    <div id="leftcross">
+                        <div id="leftT"></div>
+                    </div>
+                    <div id="topcross">
+                        <div id="upT"></div>
+                    </div>
+                    <div id="rightcross">
+                        <div id="rightT"></div>
+                    </div>
+                    <div id="midcross">
+                        <div id="midCircle"></div>
+                    </div>
+                    <div id="botcross">
+                        <div id="downT"></div>
+                    </div>
+                </div>
             </div>
-            <div id="bigbluebutton"></div>
-            <div id="barbutton1"></div>
-            <div id="barbutton2"></div>
-            <div id="cross">
-              <div id="leftcross">
-                <div id="leftT"></div>
-              </div>
-              <div id="topcross">
-                <div id="upT"></div>
-              </div>
-              <div id="rightcross">
-                <div id="rightT"></div>
-              </div>
-              <div id="midcross">
-                <div id="midCircle"></div>
-              </div>
-              <div id="botcross">
-                <div id="downT"></div>
-              </div>
-            </div>
-          </div>
-          <div id="right">
-            <div id="stats">
-              <strong>Name:</strong> @pokemon.Name <br/>
-              <strong>Type:</strong> @pokemon.Type1 <br/>
-              <strong>Height:</strong> @pokemon.Height <br/>
-              <strong>Weight:</strong> @pokemon.Weight <br/><br/>
-              <strong>@pokemon.Description</strong><br/>
-              @* @if (nextLevelPokemon != null) *@
-              @* { *@
-              @*   <strong>Next Level Height:</strong> @nextLevelPokemon.Height *@
-              @* } *@
-            </div>
-            <div id="blueButtons1">
-              <div class="blueButton"></div>
-              <div class="blueButton"></div>
-              <div class="blueButton"></div>
-              <div class="blueButton"></div>
-              <div class="blueButton"></div>
-            </div>
-            <div id="blueButtons2">
-              <div class="blueButton"></div>
-              <div class="blueButton"></div>
-              <div class="blueButton"></div>
-              <div class="blueButton"></div>
-              <div class="blueButton"></div>
-            </div>
-            <div id="miniButtonGlass4"></div>
-            <div id="miniButtonGlass5"></div>
-            <div id="barbutton3"></div>
-            <div id="barbutton4"></div>
-            <div id="yellowBox1" class="d-flex justify-content-center">
-              @switch (pokemon.Level)
-              {
-                case 1:
-                  if (nextLevelPokemon.Level > 1 && nextLevelPokemon != null)
-                  {
-                    <img src="@secondLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;"/>
-                  }
-                  break;
-                case 2:
-                  if (backLevelPokemon.Level == 1 && backLevelPokemon != null)
-                  {
-                    <img src="@firstLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;"/>
-                  }
+            <div id="right">
+                <div id="stats">
+                    <strong>Name:</strong> @pokemon.Name <br />
+                    <strong>Type:</strong> @pokemon.Type1 <br />
+                    <strong>Height:</strong> @pokemon.Height <br />
+                    <strong>Weight:</strong> @pokemon.Weight <br /><br />
+                    <strong>@pokemon.Description</strong><br />
+                </div>
+                <div id="blueButtons1">
+                    <div class="blueButton"></div>
+                    <div class="blueButton"></div>
+                    <div class="blueButton"></div>
+                    <div class="blueButton"></div>
+                    <div class="blueButton"></div>
+                </div>
+                <div id="blueButtons2">
+                    <div class="blueButton"></div>
+                    <div class="blueButton"></div>
+                    <div class="blueButton"></div>
+                    <div class="blueButton"></div>
+                    <div class="blueButton"></div>
+                </div>
+                <div id="miniButtonGlass4"></div>
+                <div id="miniButtonGlass5"></div>
+                <div id="barbutton3"></div>
+                <div id="barbutton4"></div>
 
-                  break;
-                  
-                case 3: 
-                  <p style="display: flex; align-items: center; justify-content: center; width: 140px; height: 70px;">
-                    MAX LEVEL
-                  </p>
-                  
-                  break;
-                  
-                default:
-                  <p style="display: flex; align-items: center; justify-content: center; width: 140px; height: 70px;">
-                    NONE
-                  </p>
-                  break;
-              }
+                @if (pokemon.Id != 151 && pokemon.Id != 150 && nextLevelPokemon.Level != pokemon.Level)
+                {
+                    <div id="yellowBox1" class="d-flex justify-content-center">
+                        @switch (pokemon.Level)
+                        {
+                            case 1:
+                                if (pokemon.Id != 151 && nextLevelPokemon != null && nextLevelPokemon.Level > 1)
+                                {
+                                    <img src="@secondLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
+                                }
+                                break;
+                            case 2:
+                                if (backLevelPokemon != null && backLevelPokemon.Level == 1)
+                                {
+                                    <img src="@firstLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
+                                }
+                                break;
+                            case 3:
+                                if (backBackLevelPokemon != null && backBackLevelPokemon.Level == 1)
+                                {
+                                    <img src="@firstLevelPokemonForThirdLPokemons" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
+                                }
+                                break;
+                            default:
+                                <p style="display: flex; align-items: center; justify-content: center; width: 140px; height: 70px;">
+                                    NONE
+                                </p>
+                                break;
+                        }
+                    </div>
+                }
+                
+                  @if (pokemon.Name == "Jolteon" || pokemon.Name == "Flareon")
+                    {
+                      <div id="yellowBox1" class="d-flex justify-content-center">
+                           <img src="images/pokemon/Eevee.gif" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
+                       </div> 
+                    }
+                
+
+                @if (pokemon.Id != 151 && pokemon.Id != 150 && nextLevelPokemon.Level != pokemon.Level && nextNextLevelPokemon.Level != pokemon.Level && pokemon.Name != "Flareon")
+                {
+                    <div id="yellowBox2" class="d-flex justify-content-center">
+                        @switch (pokemon.Level)
+                        {
+                            case 1:
+                                if (pokemon.Id != 151 && pokemon.Id != 150 && nextNextLevelPokemon != null && nextNextLevelPokemon.Level == 3)
+                                {
+                                    <img src="@thirdLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
+                                }
+
+                                else if (pokemon.Name == "Eevee")
+                                {
+                                    <img src="images/pokemon/Flareon.gif" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
+                                }
+                                break;
+                            case 2:
+                                if (nextLevelPokemon != null && nextLevelPokemon.Level > 2)
+                                {
+                                    <img src="@secondLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
+                                }
+                                break;
+                            case 3:
+                                if (backLevelPokemon != null && backLevelPokemon.Level == 2)
+                                {
+                                    <img src="@firstLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
+                                }
+                                break;
+                            default:
+                                break;
+                        }
+                       
+                    </div>
+                }
+                <div id="bg_curve1_right"></div>
+                <div id="bg_curve2_right"></div>
+                <div id="curve1_right"></div>
+                <div id="curve2_right"></div>
             </div>
-            <div id="yellowBox2">
-              
-            </div>
-            <div id="bg_curve1_right"></div>
-            <div id="bg_curve2_right"></div>
-            <div id="curve1_right"></div>
-            <div id="curve2_right"></div>
-          </div>
         </div>
     </div>
 }
 
 @code {
-  [Parameter] public int Id { get; set; }
-  [Parameter] public int NextId { get; set; }
-  [Parameter] public int? BackId { get; set; }
-  [Parameter] public int NextNextId { get; set; }
+    [Parameter] public int Id { get; set; }
 
-  private Pokemon pokemon;
-  private Pokemon nextLevelPokemon;
-  private Pokemon backLevelPokemon;
-  private Pokemon nextNextLevelPokemon;
+    private Pokemon pokemon;
+    private Pokemon nextLevelPokemon;
+    private Pokemon backLevelPokemon;
+    private Pokemon nextNextLevelPokemon;
+    private Pokemon backBackLevelPokemon;
 
-  protected override async Task OnInitializedAsync()
-  {
-    var pokemons = await PokemonService.GetAllPokemonsAsync();
-    pokemon = pokemons.FirstOrDefault(p => p.Id == Id);
-    
-    if (Id - 1 > 0)
+    protected override async Task OnInitializedAsync()
     {
-      backLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id - 1);
-      if (backLevelPokemon != null)
-      {
-        BackId = backLevelPokemon.Id;
-      }
+        var pokemons = await PokemonService.GetAllPokemonsAsync();
+        pokemon = pokemons.FirstOrDefault(p => p.Id == Id);
+        nextLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id + 1);
+        nextNextLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id + 2);
+        backLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id - 1);
+        backBackLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id - 2);
     }
-
-    nextLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id + 1);
-    nextNextLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id + 2);
-
-  }
-
+    
 }
