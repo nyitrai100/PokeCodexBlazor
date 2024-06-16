@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aNUnIPL7I0U5az3VUBhHl6lYGWviESQMuVaOcR3bt/I=",
+  "Hash": "BSZmUSFZylnGfksVbaMueT2CLWcj17E/95mpxiBXjP8=",
   "Source": "PokeCodexBlazor",
   "BasePath": "_content/PokeCodexBlazor",
   "Mode": "Default",
@@ -397,12 +397,12 @@
       "OriginalItemSpec": "wwwroot/images/pokemon/Chansey.gif"
     },
     {
-      "Identity": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Charizard.gif",
+      "Identity": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/charizard.gif",
       "SourceId": "PokeCodexBlazor",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/",
       "BasePath": "_content/PokeCodexBlazor",
-      "RelativePath": "images/pokemon/Charizard.gif",
+      "RelativePath": "images/pokemon/charizard.gif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -413,7 +413,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/pokemon/Charizard.gif"
+      "OriginalItemSpec": "wwwroot/images/pokemon/charizard.gif"
     },
     {
       "Identity": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Charmander.gif",

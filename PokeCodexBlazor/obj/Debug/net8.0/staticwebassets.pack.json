@@ -85,10 +85,6 @@
       "PackagePath": "staticwebassets/images/pokemon/Chansey.gif"
     },
     {
-      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Charizard.gif",
-      "PackagePath": "staticwebassets/images/pokemon/Charizard.gif"
-    },
-    {
       "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Charmander.gif",
       "PackagePath": "staticwebassets/images/pokemon/Charmander.gif"
     },
@@ -631,6 +627,10 @@
     {
       "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Zubat.gif",
       "PackagePath": "staticwebassets/images/pokemon/Zubat.gif"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/charizard.gif",
+      "PackagePath": "staticwebassets/images/pokemon/charizard.gif"
     },
     {
       "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/dexball.png",

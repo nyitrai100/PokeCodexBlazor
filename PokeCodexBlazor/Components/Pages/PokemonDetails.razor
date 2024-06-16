@@ -1,6 +1,7 @@
 @page "/PokemonDetails/{id:int}"
 @inject PokemonService PokemonService
 @using PokeCodexBlazor
+@rendermode InteractiveServer
 
 <head>
     <link rel="stylesheet" href="PokemonDetails.css">
@@ -63,13 +64,14 @@ else
                 <div id="barbutton2"></div>
                 <div id="cross">
                     <div id="leftcross">
-                        <div id="leftT"></div>
+                        <div id="leftT" @onclick="PreviousPokemonClick" style="cursor: pointer;"></div>
                     </div>
                     <div id="topcross">
                         <div id="upT"></div>
                     </div>
                     <div id="rightcross">
-                        <div id="rightT"></div>
+                         
+                        <div id="rightT" @onclick="NextPokemonClick" style="cursor: pointer; "></div>
                     </div>
                     <div id="midcross">
                         <div id="midCircle"></div>
@@ -105,19 +107,20 @@ else
                 <div id="miniButtonGlass5"></div>
                 <div id="barbutton3"></div>
                 <div id="barbutton4"></div>
-
-                @if (pokemon.Id != 151 && pokemon.Id != 150 && nextLevelPokemon.Level != pokemon.Level)
+                
+                @if (pokemon.Id != pokemonNumbers && pokemon.Id != 150 && nextLevelPokemon.Level != pokemon.Level)
                 {
                     <div id="yellowBox1" class="d-flex justify-content-center">
                         @switch (pokemon.Level)
                         {
                             case 1:
-                                if (pokemon.Id != 151 && nextLevelPokemon != null && nextLevelPokemon.Level > 1)
+                                if (pokemon.Id != pokemonNumbers && nextLevelPokemon != null && nextLevelPokemon.Level > 1)
                                 {
                                     <p style="display: flex; position: absolute; top: 71px; font-size: xx-small; color: white; text-decoration-style: double; ">
                                          Level 2
                                     </p>
-                                    <img src="@secondLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
+                                    <img src="@secondLevelPokemon"  height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
+                                    @* <button @onclick="SecondLevelPokemonClick"></button> *@
                                 }
                                 break;
                             case 2:
@@ -127,6 +130,7 @@ else
                                         Level 1
                                     </p>
                                     <img src="@firstLevelPokemon" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
+                                    @* <button @onclick="FirstLevelPokemonClick"></button> *@
                                 }
                                 break;
                             case 3:
@@ -136,6 +140,7 @@ else
                                         Level 1
                                     </p>
                                     <img src="@firstLevelPokemonForThirdLPokemons" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
+                                    
                                 }
                                 break;
                             default:
@@ -146,16 +151,16 @@ else
                         }
                     </div>
                 }
-                
+
                   @if (pokemon.Name == "Jolteon" || pokemon.Name == "Flareon")
                     {
                       <div id="yellowBox1" class="d-flex justify-content-center">
                            <img src="images/pokemon/Eevee.gif" height="fit-content" onerror="this.src='/images/default.gif'; this.onerror=null;" />
-                       </div> 
+                       </div>
                     }
-                
 
-                @if (pokemon.Id != 151 && pokemon.Id != 150 && nextLevelPokemon.Level != pokemon.Level && nextNextLevelPokemon.Level != pokemon.Level && pokemon.Name != "Flareon")
+
+                @if (pokemon.Id != pokemonNumbers && pokemon.Id != 150 && nextLevelPokemon.Level != pokemon.Level && nextNextLevelPokemon.Level != pokemon.Level && pokemon.Name != "Flareon")
                 {
                     <div id="yellowBox2" class="d-flex justify-content-center">
                         @switch (pokemon.Level)
@@ -198,7 +203,7 @@ else
                             default:
                                 break;
                         }
-                       
+
                     </div>
                 }
                 <div id="bg_curve1_right"></div>
@@ -211,6 +216,8 @@ else
 }
 
 @code {
+    int pokemonNumbers = 0;
+
     [Parameter] public int Id { get; set; }
 
     private Pokemon pokemon;
@@ -222,11 +229,56 @@ else
     protected override async Task OnInitializedAsync()
     {
         var pokemons = await PokemonService.GetAllPokemonsAsync();
+        pokemonNumbers = pokemons.Count;
         pokemon = pokemons.FirstOrDefault(p => p.Id == Id);
         nextLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id + 1);
         nextNextLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id + 2);
         backLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id - 1);
         backBackLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id - 2);
     }
+
+
+    // public async Task FirstLevelPokemonClick()
+    // {
+    //     await OnInitializedAsync();
+    //     
+    //     StateHasChanged();
+    //     
+    // }
+    //
+    // public async Task SecondLevelPokemonClick()
+    // {
+    //     
+    //     await OnInitializedAsync();
+    //     var pokemons = await PokemonService.GetAllPokemonsAsync();
+    //     pokemon = pokemons.FirstOrDefault(p => p.Id == Id + 1 );
+    //     nextLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id + 2);
+    //     backLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id );
+    //     StateHasChanged();
+    // }
+
     
+
+    
+    
+    public async Task NextPokemonClick()
+    {
+        if (Id != pokemonNumbers)
+        {
+            Id++;
+            await OnInitializedAsync();
+            StateHasChanged();
+        }
+    }
+    
+    public async Task PreviousPokemonClick()
+    {
+        if (Id != 1)
+        {
+            Id--;
+            await OnInitializedAsync();
+            StateHasChanged();
+        }
+    }
 }
+
