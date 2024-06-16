@@ -67,7 +67,7 @@ else
                         <div id="leftT" @onclick="PreviousPokemonClick" style="cursor: pointer;"></div>
                     </div>
                     <div id="topcross">
-                        <div id="upT"></div>
+                        <div id="upT"> </div>
                     </div>
                     <div id="rightcross">
                          
@@ -208,8 +208,8 @@ else
                 }
                 <div id="bg_curve1_right"></div>
                 <div id="bg_curve2_right"></div>
-                <div id="curve1_right"></div>
-                <div id="curve2_right"></div>
+                <div id="curve1_right" style="color: white;padding: 28px;"> @pokemon.Name</div>
+                <div id="curve2_right"> <div style="color: white; width: 100%; display: flex;justify-content: flex-end;"> @pokemon.Id/@pokemonNumbers</div></div>
             </div>
         </div>
     </div>
