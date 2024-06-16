@@ -33,6 +33,66 @@
       "PackagePath": "staticwebassets/images/logo.png"
     },
     {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon-types/Battrio_Bug_type.png",
+      "PackagePath": "staticwebassets/images/pokemon-types/Battrio_Bug_type.png"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon-types/Battrio_Dragon_type.png",
+      "PackagePath": "staticwebassets/images/pokemon-types/Battrio_Dragon_type.png"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon-types/Battrio_Electric_type.png",
+      "PackagePath": "staticwebassets/images/pokemon-types/Battrio_Electric_type.png"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon-types/Battrio_Fighting_type.png",
+      "PackagePath": "staticwebassets/images/pokemon-types/Battrio_Fighting_type.png"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon-types/Battrio_Fire_type.png",
+      "PackagePath": "staticwebassets/images/pokemon-types/Battrio_Fire_type.png"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon-types/Battrio_Flying_type.png",
+      "PackagePath": "staticwebassets/images/pokemon-types/Battrio_Flying_type.png"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon-types/Battrio_Ghost_type.png",
+      "PackagePath": "staticwebassets/images/pokemon-types/Battrio_Ghost_type.png"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon-types/Battrio_Grass_type.png",
+      "PackagePath": "staticwebassets/images/pokemon-types/Battrio_Grass_type.png"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon-types/Battrio_Ground_type.png",
+      "PackagePath": "staticwebassets/images/pokemon-types/Battrio_Ground_type.png"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon-types/Battrio_Ice_type.png",
+      "PackagePath": "staticwebassets/images/pokemon-types/Battrio_Ice_type.png"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon-types/Battrio_Normal_type.png",
+      "PackagePath": "staticwebassets/images/pokemon-types/Battrio_Normal_type.png"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon-types/Battrio_Poison_type.png",
+      "PackagePath": "staticwebassets/images/pokemon-types/Battrio_Poison_type.png"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon-types/Battrio_Psychic_type.png",
+      "PackagePath": "staticwebassets/images/pokemon-types/Battrio_Psychic_type.png"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon-types/Battrio_Rock_type.png",
+      "PackagePath": "staticwebassets/images/pokemon-types/Battrio_Rock_type.png"
+    },
+    {
+      "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon-types/Battrio_Water_type.png",
+      "PackagePath": "staticwebassets/images/pokemon-types/Battrio_Water_type.png"
+    },
+    {
       "Id": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/wwwroot/images/pokemon/Abra.gif",
       "PackagePath": "staticwebassets/images/pokemon/Abra.gif"
     },
