@@ -19,6 +19,7 @@ else
 {
     string gifFilePath = $"/images/pokemon/{pokemon.Name}.gif";
     string pokemonTypePath = $"/images/pokemon-types/Battrio_{pokemon.Type1}_type.png";
+    string pokemonType2Path = $"/images/pokemon-types/Battrio_{pokemon.Type2}_type.png";
     string secondLevelPokemon = nextLevelPokemon != null ? $"/images/pokemon/{nextLevelPokemon.Name}.gif" : "";
     string firstLevelPokemon = backLevelPokemon != null ? $"/images/pokemon/{backLevelPokemon.Name}.gif" : "";
     string thirdLevelPokemon = nextNextLevelPokemon != null ? $"/images/pokemon/{nextNextLevelPokemon.Name}.gif" : "";
@@ -28,7 +29,8 @@ else
             <div id="left">
                 <div id="logo"></div>
                 <div id="bg_curve1_left"></div>
-                <div id="bg_curve2_left"></div>
+                <div id="bg_curve2_left">
+                </div>
                 <div id="curve1_left">
                     <div id="buttonGlass">
                         <div id="reflect"> </div>
@@ -85,31 +87,158 @@ else
             </div>
             <div id="right">
                 <div id="stats">
-                    <strong>Name:</strong> @pokemon.Name <br />
-                    <strong>Type:</strong> @pokemon.Type1 <br />
-                    <strong>Height:</strong> @pokemon.Height <br />
-                    <strong>Weight:</strong> @pokemon.Weight <br /><br />
                     <strong>@pokemon.Description</strong><br />
                 </div>
+                <div style="width: 130px; position: absolute; top: 249px; left: 39px; z-index: 1; font-size: small; color: white; text-decoration-style: double;">
+                    <p>Strong: 
+                        @foreach (var type in StrongAgainstTypes)
+                                   {
+                                       <img src="@GetStrongAgainstImagePath(type)" style="width: 20px; height: 20px; margin-top: -2px;" alt="@type"/>
+                                   } </p> 
+                </div>
+                 <div style="width: 150px; position: absolute; top: 249px; left: 171px; z-index: 1; font-size: small; color: white; text-decoration-style: double;">
+                     <p>Weak:
+                         @foreach (var type in WeakAgainstTypes)
+                         {
+                             <img src="@GetWeakAgainstImagePath(type)" style="width: 20px; height: 20px; margin-top: -2px;" alt="@type"/> 
+                         }
+                     </p>
+    
+                     </div>
                 <div id="blueButtons1">
                     <div class="blueButton">
                         <p style="display: flex; position: absolute; top: -13px; left: 11px; font-size: xx-small; color: white; text-decoration-style: double; "> Type</p>
                         <img src="@pokemonTypePath" style="width: 30px; height: 30px; margin-left: 7px; margin-top: 3px;" alt="@pokemon.Type1"/>
                     </div>
-                    <div class="blueButton"></div>
+                    <div class="blueButton">
+                        <p style="display: flex; position: absolute; top: -13px; left: 59px; font-size: xx-small; color: white; text-decoration-style: double; "> Type-2</p>
+                        @if (pokemon.Type2 != null)
+                        {
+                            <img src="@pokemonType2Path" style="width: 30px; height: 30px; margin-left: 7px; margin-top: 3px;" alt="@pokemon.Type2"/>
+                        }
+                        else
+                        {
+                            <p style="display: flex; justify-content: center;  margin-top: 9px; font-size: 11px; color: white;">None</p>
+                        }
+                    </div>
                     <div class="blueButton">
                         <p style="display: flex; position: absolute; top: -13px; left: 111px; font-size: xx-small; color: white; text-decoration-style: double; "> Height</p>
-                        <p style="display:flex; justify-content: center; margin-top: 5px;">@pokemon.Height</p> 
+                        <p style="display:flex; justify-content: center; margin-top: 9px; font-size: 11px; color: white;">@pokemon.Height</p> 
                     </div>
-                    <div class="blueButton"></div>
-                    <div class="blueButton"></div>
+                    <div class="blueButton">
+                        <p style="display: flex; position: absolute; top: -13px; left: 163px; font-size: xx-small; color: white; text-decoration-style: double; "> Weight</p>
+                        <p style="display:flex; justify-content: center; margin-top: 9px; font-size: 11px; color: white; ">@pokemon.Weight</p> 
+                    </div>
+                    <div class="blueButton">
+                         <p style="display: flex; position: absolute; top: -13px; left: 219px; font-size: xx-small; color: white; text-decoration-style: double; "> Level</p>
+                         <p style="display:flex; justify-content: center; margin-top: 9px; font-size: 11px; color: white; ">@pokemon.Level</p> 
+                    </div>
                 </div>
                 <div id="blueButtons2">
-                    <div class="blueButton"></div>
-                    <div class="blueButton"></div>
-                    <div class="blueButton"></div>
-                    <div class="blueButton"></div>
-                    <div class="blueButton"></div>
+                    <div class="blueButton">
+                        <p style="display:flex; justify-content: center; margin-top: 10px; font-size: 11px; color: @TypesColor(@pokemon.Type1); ">
+                            @pokemon.Type1
+                        </p> 
+                    </div>
+                    <div class="blueButton">
+                        @if (pokemon.Type2 != null)
+                        {
+                            <p style="display:flex; justify-content: center; margin-top: 10px; font-size: 11px; color: @TypesColor(@pokemon.Type2); ">
+                                @pokemon.Type2
+                            </p>
+                        }
+                        else
+                        {
+                            <p style="display:flex; justify-content: center; margin-top: 10px; font-size: 11px; color: white; ">
+                                None
+                            </p>
+                        }
+                    </div>
+                    <div class="blueButton">
+                        @switch (pokemon.Height)
+                        {
+                          case < 40 :  
+                              <p style="display:flex; justify-content: center; margin-top: 10px; font-size: 11px; color: white;">
+                                   Small
+                              </p>
+                              break;
+                              
+                          case < 60:
+                              <p style="display:flex; justify-content: center; margin-top: 10px; font-size: 11px; color: white;">
+                                  Medium
+                              </p>
+                              break;
+                              
+                          case < 110:
+                              <p style="display:flex; justify-content: center; margin-top: 10px; font-size: 11px; color: white;">
+                                  Big
+                              </p>
+                              break;
+                              
+                          case > 110:
+                              <p style="display:flex; justify-content: center; margin-top: 10px; font-size: 11px; color: white;">
+                                  Huge
+                              </p>
+                              break;
+                              
+                          default:
+                              <p style="display:flex; justify-content: center; margin-top: 10px; font-size: 11px; color: white;">
+                                  None
+                              </p>
+                              break;
+                        }
+                    </div>
+                    <div class="blueButton">
+                        @switch (pokemon.Weight)
+                        {
+                            case < 25:
+                                <p style="display:flex; justify-content: center; margin-top: 10px; font-size: 11px; color: white;">
+                                    Light
+                                </p>
+                                break;
+                                
+                            case < 50:
+                                <p style="display:flex; justify-content: center; margin-top: 10px; font-size: 11px; color: white;">
+                                    Middle
+                                </p>
+                                break;
+                                
+                            case < 100:
+                                <p style="display:flex; justify-content: center; margin-top: 10px; font-size: 11px; color: white;">
+                                    Heavy
+                                </p>
+                                break;
+                                
+                            case > 100:
+                                <p style="display:flex; justify-content: center; margin-top: 10px; font-size: 11px; color: white;">
+                                    S-Heavy
+                                </p>
+                                break;
+                        }
+                    </div>
+                    <div class="blueButton">
+                        @if (nextLevelPokemon != null)
+                        {
+                            if(pokemon.Name == "Vaporeon" || pokemon.Name == "Jolteon") 
+                            {
+                                <p style="display:flex; justify-content: center; margin-top: 10px; font-size: 11px; color: white;">
+                                    Max
+                                </p>
+                            }
+                            if (pokemon.Level == 3 || nextLevelPokemon.Level == 1)
+                            {
+                                <p style="display:flex; justify-content: center; margin-top: 10px; font-size: 11px; color: white;">
+                                    Max
+                                </p>
+                            }
+                        }
+                        else
+                        {
+                            <p style="display:flex; justify-content: center; margin-top: 10px; font-size: 11px; color: white;">
+                                Max
+                            </p>
+                        }
+                    </div>
                 </div>
                 <div id="miniButtonGlass4"></div>
                 <div id="miniButtonGlass5"></div>
@@ -233,6 +362,8 @@ else
     private Pokemon backLevelPokemon;
     private Pokemon nextNextLevelPokemon;
     private Pokemon backBackLevelPokemon;
+    private List<string> StrongAgainstTypes = new List<string>();
+    private List<string> WeakAgainstTypes = new List<string>();
 
     protected override async Task OnInitializedAsync()
     {
@@ -243,6 +374,8 @@ else
         nextNextLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id + 2);
         backLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id - 1);
         backBackLevelPokemon = pokemons.FirstOrDefault(p => p.Id == Id - 2);
+        GetStrongAgainstTypes(pokemon.Type1);
+        GetWeakAgainstTypes(pokemon.Type1);
     }
 
 
@@ -265,10 +398,10 @@ else
     //     StateHasChanged();
     // }
 
-    
 
-    
-    
+
+
+
     public async Task NextPokemonClick()
     {
         if (Id != pokemonNumbers)
@@ -284,7 +417,7 @@ else
             StateHasChanged();
         }
     }
-    
+
     public async Task PreviousPokemonClick()
     {
         if (Id != 1)
@@ -300,6 +433,193 @@ else
             StateHasChanged();
         }
     }
+
+
     
+    private string TypesColor(string type)
+    {
+        return type switch
+        {
+            "Water" => "skyblue",
+            "Grass" => "lightGreen",
+            "Normal" => "lightBlue",
+            "Fire" => "red",
+            "Bug" => "darkseaGreen",
+            "Poison" => "purple",
+            "Ground" => "sandyBrown",
+            "Psychic" => "pink",
+            "Fighting" => "lightGrey",
+            "Rock" => "grey",
+            "Electric" => "yellow",
+            "Ghost" => "rebeccaPurple",
+            "Ice" => "white",
+            "Dragon" => "orange",
+            "Flying" => "floralwhite",
+            _ => "black"
+        };
+    }
+    
+    
+    private string GetStrongAgainstImagePath(string type)
+    {
+        return $"/images/pokemon-types/Battrio_{type}_type.png";
+    }
+    private void GetStrongAgainstTypes(string type)
+{
+    StrongAgainstTypes.Clear();
+    switch (type)
+    {
+        case "Dragon":
+            StrongAgainstTypes.Add("Dragon");
+            break;
+        case "Electric":
+            StrongAgainstTypes.Add("Water");
+            StrongAgainstTypes.Add("Flying");
+            break;
+        case "Fighting":
+            StrongAgainstTypes.Add("Normal");
+            StrongAgainstTypes.Add("Ice");
+            StrongAgainstTypes.Add("Rock");
+            break;
+        case "Fire":
+            StrongAgainstTypes.Add("Grass");
+            StrongAgainstTypes.Add("Ice");
+            StrongAgainstTypes.Add("Bug");
+            break;
+        case "Ghost":
+            StrongAgainstTypes.Add("Psychic");
+            StrongAgainstTypes.Add("Ghost");
+            break;
+        case "Grass":
+            StrongAgainstTypes.Add("Water");
+            StrongAgainstTypes.Add("Ground");
+            StrongAgainstTypes.Add("Rock");
+            break;
+        case "Ground":
+            StrongAgainstTypes.Add("Fire");
+            StrongAgainstTypes.Add("Electric");
+            StrongAgainstTypes.Add("Poison");
+            StrongAgainstTypes.Add("Rock");
+            break;
+        case "Ice":
+            StrongAgainstTypes.Add("Grass");
+            StrongAgainstTypes.Add("Ground");
+            StrongAgainstTypes.Add("Flying");
+            StrongAgainstTypes.Add("Dragon");
+            break;
+        case "Normal":
+            break;
+        case "Poison":
+            StrongAgainstTypes.Add("Grass");
+            break;
+        case "Psychic":
+            StrongAgainstTypes.Add("Fighting");
+            StrongAgainstTypes.Add("Poison");
+            break;
+        case "Rock":
+            StrongAgainstTypes.Add("Fire");
+            StrongAgainstTypes.Add("Ice");
+            StrongAgainstTypes.Add("Flying");
+            StrongAgainstTypes.Add("Bug");
+            break;
+        case "Water":
+            StrongAgainstTypes.Add("Fire");
+            StrongAgainstTypes.Add("Ground");
+            StrongAgainstTypes.Add("Rock");
+            break;
+        default:
+            break;
+    }
+}
+    private string GetWeakAgainstImagePath(string type)
+    {
+        return $"/images/pokemon-types/Battrio_{type}_type.png";
+    }
+
+    private void GetWeakAgainstTypes(string type)
+    {
+        WeakAgainstTypes.Clear();
+        switch (type)
+        {
+           case "Bug": 
+               WeakAgainstTypes.Add("Fire"); 
+               WeakAgainstTypes.Add("Fighting"); 
+               WeakAgainstTypes.Add("Poison"); 
+               WeakAgainstTypes.Add("Flying");
+               WeakAgainstTypes.Add("Ghost"); 
+               break;
+               
+           case "Dragon":
+               break;
+               
+           case "Electric":
+               WeakAgainstTypes.Add("Grass"); 
+               WeakAgainstTypes.Add("Electric"); 
+               WeakAgainstTypes.Add("Dragon"); 
+               WeakAgainstTypes.Add("Ground"); 
+               break;
+               
+           case "Fighting":
+               WeakAgainstTypes.Add("Poison"); 
+               WeakAgainstTypes.Add("Psychic"); 
+               WeakAgainstTypes.Add("Bug"); 
+               WeakAgainstTypes.Add("Ghost"); 
+               break;
+               
+           case "Fire":
+               WeakAgainstTypes.Add("Fire");
+               WeakAgainstTypes.Add("Water");
+               WeakAgainstTypes.Add("Rock");
+               WeakAgainstTypes.Add("Dragon"); 
+               break;
+               
+           case "Ghost": 
+               WeakAgainstTypes.Add("Normal"); 
+               break;
+               
+           case "Grass":
+               WeakAgainstTypes.Add("Fire");
+               WeakAgainstTypes.Add("Grass");
+               WeakAgainstTypes.Add("Bug");
+               WeakAgainstTypes.Add("Dragon"); 
+               break;
+               
+           case "Ground":
+               WeakAgainstTypes.Add("Grass");
+               WeakAgainstTypes.Add("Bug"); 
+               break;
+               
+           case "Ice":
+               WeakAgainstTypes.Add("Fire");
+               WeakAgainstTypes.Add("Water"); 
+               WeakAgainstTypes.Add("Ice"); 
+               break;
+               
+           case "Normal":
+               WeakAgainstTypes.Add("Rock");
+               WeakAgainstTypes.Add("Ghost"); 
+               break;
+               
+           case "Poison":
+               WeakAgainstTypes.Add("Poison");
+               WeakAgainstTypes.Add("Ground"); 
+               WeakAgainstTypes.Add("Rock"); 
+               WeakAgainstTypes.Add("Ghost");
+               break;
+               
+           case "Psychic":
+               WeakAgainstTypes.Add("Psychic");
+               break;
+               
+           case "Rock":
+               WeakAgainstTypes.Add("Fighting");
+               WeakAgainstTypes.Add("Ground"); 
+               break;
+               
+           case "Water":
+               break;
+        }
+    }
+
 }
 

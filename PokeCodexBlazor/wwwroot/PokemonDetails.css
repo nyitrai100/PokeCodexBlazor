@@ -722,7 +722,7 @@
     div#stats
     {
         overflow: scroll;
-        height: 130px;
+        height: 117px;
         width: 280px;
         padding: 10px;
         background-color: #30da0c;
@@ -732,7 +732,7 @@
 
         position: absolute;
         top: 130px;
-        left: 25px;
+        left: 34px;
 
         border-radius: 15px;
         -webkit-border-radius: 15px;
