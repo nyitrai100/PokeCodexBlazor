@@ -148,3 +148,5 @@
 /Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/obj/Debug/net8.0/PokeCode.55372E6A.Up2Date
 /Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/bin/Debug/net8.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 /Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/obj/Debug/net8.0/PokeCodexBlazor.sourcelink.json
+/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/bin/Debug/net8.0/System.Speech.dll
+/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Speech.dll

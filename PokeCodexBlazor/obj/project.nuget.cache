@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DPHDXUbAN1+7NKbsprHwnG3v5f5YZeA1UoNX8UPi/SYTeIHlaegzm+tAZnwBUwkRgH8xF5AYpv2rh9aPlIkMAg==",
+  "dgSpecHash": "vJ3xm1RDZ6ajzMZcaoUMRVOIjwb+iDO5pp/Lkfslf0/sthtHyxDq0RgXdrSKGr8qjUk2JnB1uNx01vQbTeYDvA==",
   "success": true,
   "projectFilePath": "/Users/nyitraibence/Desktop/C#projects/PokeCodexBlazor/PokeCodexBlazor/PokeCodexBlazor.csproj",
   "expectedPackageFiles": [
@@ -71,6 +71,7 @@
     "/Users/nyitraibence/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512",
     "/Users/nyitraibence/.nuget/packages/system.security.cryptography.protecteddata/8.0.0/system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
     "/Users/nyitraibence/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
+    "/Users/nyitraibence/.nuget/packages/system.speech/9.0.0-preview.5.24306.7/system.speech.9.0.0-preview.5.24306.7.nupkg.sha512",
     "/Users/nyitraibence/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
     "/Users/nyitraibence/.nuget/packages/system.text.encodings.web/9.0.0-preview.4.24266.19/system.text.encodings.web.9.0.0-preview.4.24266.19.nupkg.sha512",
     "/Users/nyitraibence/.nuget/packages/system.text.json/9.0.0-preview.4.24266.19/system.text.json.9.0.0-preview.4.24266.19.nupkg.sha512",

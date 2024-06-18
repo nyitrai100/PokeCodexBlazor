@@ -11,7 +11,8 @@
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "8.0.6",
           "Microsoft.EntityFrameworkCore": "9.0.0-preview.4.24267.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0-preview.4.24267.1",
-          "Microsoft.EntityFrameworkCore.Tools": "9.0.0-preview.4.24267.1"
+          "Microsoft.EntityFrameworkCore.Tools": "9.0.0-preview.4.24267.1",
+          "System.Speech": "9.0.0-preview.5.24306.7"
         },
         "runtime": {
           "PokeCodexBlazor.dll": {}
@@ -848,6 +849,22 @@
         }
       },
       "System.Security.Principal.Windows/5.0.0": {},
+      "System.Speech/9.0.0-preview.5.24306.7": {
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.30607"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Speech.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.30607"
+          }
+        }
+      },
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0",
@@ -1360,6 +1377,13 @@
       "sha512": "sha512-t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
       "path": "system.security.principal.windows/5.0.0",
       "hashPath": "system.security.principal.windows.5.0.0.nupkg.sha512"
+    },
+    "System.Speech/9.0.0-preview.5.24306.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q9g8ATAIvQTAOXkA20UMeEEXtVYiZ1Jw4ZWmilGKs7ubnSloGIy/hmL0YTbFLqJFh8mruvOVVEqXlNbFShfR7Q==",
+      "path": "system.speech/9.0.0-preview.5.24306.7",
+      "hashPath": "system.speech.9.0.0-preview.5.24306.7.nupkg.sha512"
     },
     "System.Text.Encoding/4.3.0": {
       "type": "package",

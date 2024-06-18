@@ -1354,6 +1354,28 @@
           }
         }
       },
+      "System.Speech/9.0.0-preview.5.24306.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Speech.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "System.Text.Encoding/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -4141,6 +4163,35 @@
         "version.txt"
       ]
     },
+    "System.Speech/9.0.0-preview.5.24306.7": {
+      "sha512": "Q9g8ATAIvQTAOXkA20UMeEEXtVYiZ1Jw4ZWmilGKs7ubnSloGIy/hmL0YTbFLqJFh8mruvOVVEqXlNbFShfR7Q==",
+      "type": "package",
+      "path": "system.speech/9.0.0-preview.5.24306.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Speech.targets",
+        "lib/net462/_._",
+        "lib/net8.0/System.Speech.dll",
+        "lib/net8.0/System.Speech.xml",
+        "lib/net9.0/System.Speech.dll",
+        "lib/net9.0/System.Speech.xml",
+        "lib/netstandard2.0/System.Speech.dll",
+        "lib/netstandard2.0/System.Speech.xml",
+        "runtimes/win/lib/net8.0/System.Speech.dll",
+        "runtimes/win/lib/net8.0/System.Speech.xml",
+        "runtimes/win/lib/net9.0/System.Speech.dll",
+        "runtimes/win/lib/net9.0/System.Speech.xml",
+        "system.speech.9.0.0-preview.5.24306.7.nupkg.sha512",
+        "system.speech.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Text.Encoding/4.3.0": {
       "sha512": "BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
       "type": "package",
@@ -4384,7 +4435,8 @@
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 8.0.6",
       "Microsoft.EntityFrameworkCore >= 9.0.0-preview.4.24267.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0-preview.4.24267.1",
-      "Microsoft.EntityFrameworkCore.Tools >= 9.0.0-preview.4.24267.1"
+      "Microsoft.EntityFrameworkCore.Tools >= 9.0.0-preview.4.24267.1",
+      "System.Speech >= 9.0.0-preview.5.24306.7"
     ]
   },
   "packageFolders": {
@@ -4443,6 +4495,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[9.0.0-preview.4.24267.1, )"
+          },
+          "System.Speech": {
+            "target": "Package",
+            "version": "[9.0.0-preview.5.24306.7, )"
           }
         },
         "imports": [
