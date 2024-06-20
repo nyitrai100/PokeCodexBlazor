@@ -17,17 +17,20 @@
 <div>
     <hr/>
     <p class="d-flex justify-content-center" style="color: black; text-decoration-style: double;">Pokemon types</p>
-    <div class="d-flex align-items-center justify-content-around">
-        @foreach (var pokemonType in PokemonTypeList)
-        {
-            <button class="d-flex justify-content-center"
-                    style="background-color: @GetCardBackgroundColor(pokemonType); color: black; text-decoration-style: double;  border: 1px solid black; border-radius: 5px; width: 60px; height: 30px;"
-                    @onclick="@(() => PokemonTypeButton(@pokemonType))">
-                @pokemonType
-            </button>
-
-        }
-    </div>
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-around">
+            
+            @foreach (var pokemonType in PokemonTypeList)
+            {
+                    <button class="d-flex justify-content-center"
+                            style="background-color: @GetCardBackgroundColor(pokemonType); color: black; text-decoration-style: double;  border: 1px solid black; border-radius: 5px; width: 60px; height: 30px;"
+                            @onclick="@(() => PokemonTypeButton(@pokemonType))">
+                        @pokemonType
+                    </button>
+                
+            }
+        </div>
+        </div>
 </div>
 <hr/>
 <strong>

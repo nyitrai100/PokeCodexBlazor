@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="PokemonDetails.css">
 </head>
 
-<h3>Pokemon Details</h3>
-<button><a href="/" style="text-decoration: none; color: black;">Back</a></button>
+<button @onclick="BackButton" style="color: white; background-color: red; border-radius: 10px; padding-left: 7px; border: 2px solid black; padding-right: 7px;">
+    Back
+</button>
 
 @if (pokemon == null)
 {
@@ -398,10 +399,16 @@ else
     //     StateHasChanged();
     // }
 
+    
+    [Inject]
+    private NavigationManager NavigationManager { get; set; }
 
+    private void BackButton()
+    {
+        NavigationManager.NavigateTo("/");
+    }
 
-
-
+    
     public async Task NextPokemonClick()
     {
         if (Id != pokemonNumbers)
