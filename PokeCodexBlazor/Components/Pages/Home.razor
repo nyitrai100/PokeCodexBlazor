@@ -7,11 +7,22 @@
 <PageTitle>Pokecodex</PageTitle>
 
 <div style="margin-bottom: 15px;">
-    <h5>Search</h5>
-    <div class="d-inline">
-        <input type="text" @bind="temporaryInputValue"/>
-        <button @onclick="Search">Search</button>
-        <button @onclick="Clear">Clear</button>
+    <h5 class="d-flex justify-content-center mt-3 mb-3">
+        Search
+    </h5>
+    <div class="d-flex justify-content-center mb-3">
+        <input type="text" @bind="temporaryInputValue"  style="background-color: red; border: 1px solid white; color: yellow; border-radius: 10px;" />
+    </div>
+    <div class="d-flex justify-content-center mt-1">
+        <button @onclick="Search" style="  background-color: red;border-radius: 10px;">
+            Search
+        </button>
+        @if (foundPokemon == true)
+        {
+            <button @onclick="Clear" style="border-radius: 10px; background-color: yellow;">
+                Clear
+            </button>
+        }
     </div>
 </div>
 <div>
@@ -47,7 +58,6 @@
 }
 else
 {
-    bool foundPokemon = false;    
     
         @foreach (var pokemon in _pokemons)
         {
@@ -87,7 +97,7 @@ else
 }
 
 @code{
-    bool foundPokemon = false;
+    private bool foundPokemon = false;
     private string temporaryInputValue;
     private string pokemonTypeOnClick { get; set; } = string.Empty;
     private List<Pokemon> _pokemons = new List<Pokemon>();
@@ -132,6 +142,7 @@ else
     {
         InputValue = string.Empty;
         pokemonTypeOnClick = string.Empty;
+        foundPokemon = false;
     }
 
     private void PokemonTypeButton(string pokemonType)
