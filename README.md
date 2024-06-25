@@ -39,6 +39,7 @@ Pokémon data sourced from my own database created using Azure Data Studio
 Inspired by the love for Pokémon and Blazor technology
 
 <img width="1440" alt="Screenshot 2024-06-25 at 14 21 34" src="https://github.com/nyitrai100/PokeCodexBlazor/assets/114404371/587bea48-7e4c-4ee1-914c-114029ad9910">
+<img width="1440" alt="Screenshot 2024-06-25 at 14 41 19" src="https://github.com/nyitrai100/PokeCodexBlazor/assets/114404371/eb02f0e1-db53-484b-80dc-78fa352408fe">
 <img width="1431" alt="Screenshot 2024-06-25 at 14 21 46" src="https://github.com/nyitrai100/PokeCodexBlazor/assets/114404371/0e0fdcc9-3308-4bbe-9bb6-fe7dcda47588">
 
 
